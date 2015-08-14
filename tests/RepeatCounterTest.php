@@ -7,11 +7,11 @@
         {
             //Arrange
             $test_RepeatCounter = new RepeatCounter;
-            $word = dog;
-            $string = dog;
+            $word = "dog";
+            $string = "dog";
 
             //Act
-            $result = $test_repeatCounter->countRepeats($word, $string);
+            $result = $test_RepeatCounter->countRepeats($word, $string);
 
             //Assert
             $this->assertEquals("dog", $result);
