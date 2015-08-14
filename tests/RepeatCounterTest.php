@@ -17,6 +17,21 @@
             $this->assertEquals("dog", $result);
 
         }
+
+        function test_countRepeats_sameWord()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $word = "water";
+            $string = 1;
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($word, $string);
+
+            //Assert
+            $this->assertEquals(1, $result);
+
+        }
     }
 
 
