@@ -18,7 +18,7 @@ Webpage where users can put in a single word and a string of words and the compu
 
 ## Technologies Used
 
-Twig, Silex, PHPUnit, PHP, HTML, CSS
+Twig, Silex, PHPUnit, PHP, HTML
 
 ### Legal
 
