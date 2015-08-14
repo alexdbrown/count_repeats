@@ -63,6 +63,21 @@
             $this->assertEquals(2, $result);
 
         }
+
+        function test_countRepeats_compareDifferentWordsInString()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $word = "penguin";
+            $string = "I went to the zoo to see a lion.";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($word, $string);
+
+            //Assert
+            $this->assertEquals("No words in string match original word.", $result);
+
+        }
     }
 
 
