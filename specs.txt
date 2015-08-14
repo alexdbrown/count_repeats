@@ -2,27 +2,27 @@ Count Repeats App Plain English Spec List
 
 //Had to delete this spec as it asserts false once numbers become the expected output for equal words//
 Behavior = Single word compared with the same word returns the original word
-Input = "dog"
+Input = "dog", "dog"
 Output = "dog"
 Why = Trying to get my method to register that it is looking for the exact same word
 
 
 Behavior = Input word compared with the same word returns the count '1'
-Input = "water"
+Input = "water", "water"
 Output = 1
 Why = Still a simple word but longer than original test word
 
 Behavior = Input word compared with a different word returns the count '0'
-Input = "apple"
-Output = "apples"
-Why = simple word that will allow method to test true or false if words are equal
+Input = "apple", "apples"
+Output = "No words in string match original word."
+Why = Simple word that will allow method to test true or false if words are equal
 
 Behavior = Input word compared to a string of words returns the number of times input word appears in string
-Input = "cat"
-Output = "The cat in the hat was the wiliest cat of all the cats."
+Input = "cat", "The cat in the hat was the wiliest cat of all the cats."
+Output = 2
 Why = Allows for the test of identifying multiple words in string as well as testing that method doesn't recognize plural word
 
-Behavior =
-Input =
-Output =
-Why =
+Behavior = Input word compared to a string of words that doesn't have original word recognizes no matches.
+Input = "penguin", "I went to the zoo to see a lion."
+Output = "No words in string match original word."
+Why = Complex string to test method on recognizing no matching words to original input. 

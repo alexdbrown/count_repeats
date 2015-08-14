@@ -32,6 +32,22 @@
             $this->assertEquals(1, $result);
 
         }
+
+
+        function test_countRepeats_differentWord()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $word = "water";
+            $string = "water";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($word, $string);
+
+            //Assert
+            $this->assertEquals(1, $result);
+
+        }
     }
 
 
