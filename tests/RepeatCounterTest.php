@@ -38,14 +38,29 @@
         {
             //Arrange
             $test_RepeatCounter = new RepeatCounter;
-            $word = "water";
-            $string = "water";
+            $word = "apple";
+            $string = "apples";
 
             //Act
             $result = $test_RepeatCounter->countRepeats($word, $string);
 
             //Assert
-            $this->assertEquals(1, $result);
+            $this->assertEquals("No words in string match original word.", $result);
+
+        }
+
+        function test_countRepeats_countWordsInString()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $word = "cat";
+            $string = "The cat in the hat was the wiliest cat of all the cats";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($word, $string);
+
+            //Assert
+            $this->assertEquals(2, $result);
 
         }
     }

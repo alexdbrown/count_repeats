@@ -1,34 +1,24 @@
 <?php
- class RepeatCounter
- {
-     function countRepeats ($word, $string)
-     {
-        // $string_of_words = explode($string);
-        $count = 1;
+    class RepeatCounter
+    {
+        function countRepeats ($word, $string)
+        {
+            $lc_word = strtolower($word);
+            $lc_string = strtolower($string);
+            $string_of_words = explode(" ", $lc_string);
+            $repeats = array();
 
-        //  foreach ($string_of_words as $individual_word) {
-             if ($word == $string) {
-                 $count += ($string);
-             } else {
+            if (!in_array($lc_word, $string_of_words)) {
                  return "No words in string match original word.";
-             }
-        //  }
-
-        return $count;
-
-        //
-        //  if ($word == $string) {
-        //     array_push($count, $string);
-        // }
-        //
-        // $result= 0
-        //
-        // foreach ($)
-        //
-        // $repeats = count(in_array($count));
-        //     return $result;
-
-     }
- }
+            } else {
+                foreach ($string_of_words as $individual_word) {
+                    if ($lc_word == $individual_word) {
+                     array_push($repeats, $individual_word);
+                    }
+                }
+            }
+            return count($repeats);
+        }
+    }
 
 ?>
