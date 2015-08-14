@@ -3,7 +3,8 @@
  {
      function countRepeats ($word, $string)
      {
-         
+         $word == $string;
+            return $word;
      }
  }
 
