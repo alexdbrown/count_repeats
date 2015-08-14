@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <title>Repeat Counter</title>
+    </head>
+    <body>
+        <div class='container'>
+            <h1>Can We Count Your Repeated Words?</h1>
+            <h4>Let's see:</h4>
+            <form action='/count_repeats'>
+                <div class='form-group'>
+                    <label for='word'>Insert a word:</label>
+                    <input id='word' name='word' type='text' class='form-control'>
+                </div>
+                <div class='form-group'>
+                    <label for='string'>Now add a string of words:</label>
+                    <input id='string' name='string' type='text' class='form-control'>
+                </div>
+                <button type='submit' class='btn-danger'>Did you repeat words?</button>
+            </form>
+        </div>
+    </body>
+</html>
