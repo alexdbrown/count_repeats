@@ -19,7 +19,7 @@ Behavior = Input word compared to a string of words returns the number of times 
 Input = cat
 Output = The cat in the hat was the wiliest cat of all the cats.
 Why = Allows for the test of identifying multiple words in string as well as testing that method doesn't recognize plural word
-
+  
 Behavior =
 Input =
 Output =
